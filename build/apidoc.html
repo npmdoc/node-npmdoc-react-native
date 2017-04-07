@@ -51,7 +51,7 @@
 
         href="https://github.com/facebook/react-native#readme"
 
-    >react-native (v0.42.3)</a>
+    >react-native (v0.43.2)</a>
 </h1>
 <h4>A framework for building native apps using React</h4>
 <div class="apidocSectionDiv"><a
@@ -81,15 +81,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.react-native.transformer">
-            function <span class="apidocSignatureSpan">react-native.</span>transformer
-            <span class="apidocSignatureSpan">(data, callback)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-native.</span>preprocessor</span>
 
         </li>
@@ -97,6 +88,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-native.</span>react_packager</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-native.</span>transformer</span>
 
         </li>
 
@@ -218,15 +215,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.react-native.transformer.transformer">
-            function <span class="apidocSignatureSpan">react-native.</span>transformer
-            <span class="apidocSignatureSpan">(data, callback)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.react-native.transformer.transform">
             function <span class="apidocSignatureSpan">react-native.transformer.</span>transform
             <span class="apidocSignatureSpan">(src, filename, options)</span>
@@ -272,27 +260,6 @@
 
 
 
-    <h2>
-        <a href="#apidoc.element.react-native.transformer" id="apidoc.element.react-native.transformer">
-        function <span class="apidocSignatureSpan">react-native.</span>transformer
-        <span class="apidocSignatureSpan">(data, callback)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">transformer = function (data, callback) {
-  let result;
-  try {
-    result = transform(data.sourceCode, data.filename, data.options);
-  } catch (e) {
-    callback(e);
-    return;
-  }
-
-  callback(null, result);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 
 
@@ -334,6 +301,7 @@
       &#x27;transform-flow-strip-types&#x27;,
       &#x27;syntax-trailing-function-commas&#x27;,
       &#x27;transform-object-rest-spread&#x27;,
+      &#x27;transform-async-to-generator&#x27;,
     ],
     only: _only,
     retainLines: true,
@@ -391,13 +359,11 @@ process(src, file) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">process(src, file) {
-  // Don&#x27;t transform node_modules, except react-tools which includes the
-  // untransformed copy of React
-  if (file.match(/node_modules\/(?!react-tools\/)/)) {
-    return src;
-  } else if (nodeFiles.test(file)) { // node specific transforms only
+  if (nodeFiles.test(file)) { // node specific transforms only
     return babel.transform(
-      src, Object.assign({filename: file}, nodeOptions)).code;
+      src,
+      Object.assign({filename: file}, nodeOptions)
+    ).code;
   }
 
   return transformer.transform(src, file, {inlineRequires: true}).code;
@@ -572,29 +538,6 @@ function enableDebug() {
 
 
     <h2>
-        <a href="#apidoc.element.react-native.transformer.transformer" id="apidoc.element.react-native.transformer.transformer">
-        function <span class="apidocSignatureSpan">react-native.</span>transformer
-        <span class="apidocSignatureSpan">(data, callback)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">transformer = function (data, callback) {
-  let result;
-  try {
-    result = transform(data.sourceCode, data.filename, data.options);
-  } catch (e) {
-    callback(e);
-    return;
-  }
-
-  callback(null, result);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.react-native.transformer.transform" id="apidoc.element.react-native.transformer.transform">
         function <span class="apidocSignatureSpan">react-native.transformer.</span>transform
         <span class="apidocSignatureSpan">(src, filename, options)</span>
@@ -629,21 +572,21 @@ function enableDebug() {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+babelRegisterOnly([]);
+// has to be required after setting up babelRegisterOnly
+const transformer = require(&#x27;../packager/transformer.js&#x27;);
+
 module.exports = {
 process(src, file) {
-  // Don&#x27;t transform node_modules, except react-tools which includes the
-  // untransformed copy of React
-  if (file.match(/node_modules\/(?!react-tools\/)/)) {
-    return src;
-  } else if (nodeFiles.test(file)) { // node specific transforms only
+  if (nodeFiles.test(file)) { // node specific transforms only
     return babel.<span class="apidocCodeKeywordSpan">transform</span>(
-      src, Object.assign({filename: file}, nodeOptions)).code;
+      src,
+      Object.assign({filename: file}, nodeOptions)
+    ).code;
   }
 
   return transformer.transform(src, file, {inlineRequires: true}).code;
 },
-
-getCacheKey: createCacheKeyFunction([
 ...</pre></li>
     </ul>
 
