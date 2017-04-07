@@ -1,11 +1,13 @@
-# api documentation for  [react-native (v0.42.3)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
+# api documentation for  [react-native (v0.43.2)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
 #### A framework for building native apps using React
 
 [![NPM](https://nodei.co/npm/react-native.png?downloads=true)](https://www.npmjs.com/package/react-native)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-native/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-react-native_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-native/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-react-native%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-native/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-react-native/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -28,6 +30,7 @@
         "babel-generator": "^6.21.0",
         "babel-plugin-external-helpers": "^6.18.0",
         "babel-plugin-syntax-trailing-function-commas": "^6.20.0",
+        "babel-plugin-transform-async-to-generator": "6.16.0",
         "babel-plugin-transform-flow-strip-types": "^6.21.0",
         "babel-plugin-transform-object-rest-spread": "^6.20.2",
         "babel-polyfill": "^6.20.0",
@@ -43,13 +46,15 @@
         "bser": "^1.0.2",
         "chalk": "^1.1.1",
         "commander": "^2.9.0",
+        "concat-stream": "^1.6.0",
         "connect": "^2.8.3",
         "core-js": "^2.2.2",
         "debug": "^2.2.0",
         "denodeify": "^1.2.1",
         "event-target-shim": "^1.0.5",
-        "fbjs": "^0.8.5",
+        "fbjs": "~0.8.9",
         "fbjs-scripts": "^0.7.0",
+        "form-data": "^2.1.1",
         "fs-extra": "^0.26.2",
         "glob": "^5.0.15",
         "graceful-fs": "^4.1.3",
@@ -57,7 +62,7 @@
         "immutable": "~3.7.6",
         "imurmurhash": "^0.1.4",
         "inquirer": "^0.12.0",
-        "jest-haste-map": "18.0.0",
+        "jest-haste-map": "19.0.0",
         "joi": "^6.6.1",
         "json-stable-stringify": "^1.0.1",
         "json5": "^0.4.0",
@@ -74,6 +79,7 @@
         "plist": "^1.2.0",
         "promise": "^7.1.1",
         "react-clone-referenced-element": "^1.0.1",
+        "react-devtools-core": "^2.0.8",
         "react-timer-mixin": "^0.13.2",
         "react-transform-hmr": "^1.0.4",
         "rebound": "^0.0.13",
@@ -95,6 +101,7 @@
         "ws": "^1.1.0",
         "xcode": "^0.8.9",
         "xmldoc": "^0.4.0",
+        "xpipe": "^1.0.5",
         "yargs": "^6.4.0"
     },
     "description": "A framework for building native apps using React",
@@ -104,21 +111,21 @@
         "eslint-plugin-babel": "^3.3.0",
         "eslint-plugin-flowtype": "^2.20.0",
         "eslint-plugin-react": "^6.4.1",
-        "flow-bin": "^0.38.0",
-        "jest": "18.0.0",
-        "jest-repl": "18.0.0",
-        "jest-runtime": "18.0.0",
+        "flow-bin": "^0.40.0",
+        "jest": "19.0.2",
+        "jest-repl": "19.0.2",
+        "jest-runtime": "19.0.2",
         "mock-fs": "^3.11.0",
-        "react": "~15.4.1",
-        "react-dom": "~15.4.1",
-        "react-test-renderer": "~15.4.1",
+        "react": "16.0.0-alpha.6",
+        "react-dom": "16.0.0-alpha.6",
+        "react-test-renderer": "16.0.0-alpha.6",
         "shelljs": "0.6.0",
         "sinon": "^2.0.0-pre.2"
     },
     "directories": {},
     "dist": {
-        "shasum": "450c8a03a5e3e991a08a426f22776dd8feb80b26",
-        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.42.3.tgz"
+        "shasum": "83cdb23d7a9cba207acbb52ad2f0b167df9b42b0",
+        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.43.2.tgz"
     },
     "engines": {
         "node": ">=4"
@@ -161,6 +168,7 @@
             "^[./a-zA-Z0-9$_-]+\\.png$": "RelativeImageStub"
         },
         "testPathIgnorePatterns": [
+            "Libraries/Renderer",
             "/node_modules/",
             "/website/",
             "local-cli/templates/"
@@ -210,6 +218,8 @@
             "<rootDir>/website/"
         ],
         "unmockedModulePathPatterns": [
+            "node_modules/react/",
+            "Libraries/Renderer",
             "promise",
             "source-map",
             "fastpath",
@@ -219,7 +229,7 @@
         ]
     },
     "license": "BSD-3-Clause",
-    "main": "Libraries/react-native/react-native.js",
+    "main": "Libraries/react-native/react-native-implementation.js",
     "maintainers": [
         {
             "name": "amasad",
@@ -269,7 +279,7 @@
     "name": "react-native",
     "optionalDependencies": {},
     "peerDependencies": {
-        "react": "~15.4.1"
+        "react": "16.0.0-alpha.6"
     },
     "readme": "ERROR: No README data found!",
     "repository": {
@@ -280,9 +290,18 @@
         "flow": "flow",
         "lint": "eslint Examples/ Libraries/",
         "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --",
-        "test": "jest"
+        "test": "jest",
+        "test-android-all": "npm run test-android-build && npm run test-android-run-unit && npm run test-android-run-instrumentation && npm run test-android-run-e2e",
+        "test-android-build": "docker build -t react/android -f ContainerShip/Dockerfile.android .",
+        "test-android-e2e": "npm run test-android-build && npm run test-android-run-e2e",
+        "test-android-instrumentation": "npm run test-android-build && npm run test-android-run-instrumentation",
+        "test-android-run-e2e": "docker run -it react/android bash ContainerShip/scripts/run-ci-e2e-tests.sh --android --js",
+        "test-android-run-instrumentation": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-instrumentation-tests.sh",
+        "test-android-run-unit": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-unit-tests.sh",
+        "test-android-setup": "docker pull containership/android-base:latest",
+        "test-android-unit": "npm run test-android-build && npm run test-android-run-unit"
     },
-    "version": "0.42.3"
+    "version": "0.43.2"
 }
 ```
 
@@ -293,9 +312,9 @@
 #### [module react-native](#apidoc.module.react-native)
 1.  [function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly)
 1.  [function <span class="apidocSignatureSpan">react-native.</span>setupBabel ()](#apidoc.element.react-native.setupBabel)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>transformer (data, callback)](#apidoc.element.react-native.transformer)
 1.  object <span class="apidocSignatureSpan">react-native.</span>preprocessor
 1.  object <span class="apidocSignatureSpan">react-native.</span>react_packager
+1.  object <span class="apidocSignatureSpan">react-native.</span>transformer
 
 #### [module react-native.babelRegisterOnly](#apidoc.module.react-native.babelRegisterOnly)
 1.  [function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly.babelRegisterOnly)
@@ -317,7 +336,6 @@
 1.  [function <span class="apidocSignatureSpan">react-native.setupBabel.</span>getOnlyList ()](#apidoc.element.react-native.setupBabel.getOnlyList)
 
 #### [module react-native.transformer](#apidoc.module.react-native.transformer)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>transformer (data, callback)](#apidoc.element.react-native.transformer.transformer)
 1.  [function <span class="apidocSignatureSpan">react-native.transformer.</span>transform (src, filename, options)](#apidoc.element.react-native.transformer.transform)
 
 
@@ -341,26 +359,6 @@ n/a
 ```javascript
 function setupBabel() {
   babelRegisterOnly(getOnlyList());
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.transformer"></a>[function <span class="apidocSignatureSpan">react-native.</span>transformer (data, callback)](#apidoc.element.react-native.transformer)
-- description and source-code
-```javascript
-transformer = function (data, callback) {
-  let result;
-  try {
-    result = transform(data.sourceCode, data.filename, data.options);
-  } catch (e) {
-    callback(e);
-    return;
-  }
-
-  callback(null, result);
 }
 ```
 - example usage
@@ -395,6 +393,7 @@ function config(onlyList) {
       'transform-flow-strip-types',
       'syntax-trailing-function-commas',
       'transform-object-rest-spread',
+      'transform-async-to-generator',
     ],
     only: _only,
     retainLines: true,
@@ -445,13 +444,11 @@ n/a
 - description and source-code
 ```javascript
 process(src, file) {
-  // Don't transform node_modules, except react-tools which includes the
-  // untransformed copy of React
-  if (file.match(/node_modules\/(?!react-tools\/)/)) {
-    return src;
-  } else if (nodeFiles.test(file)) { // node specific transforms only
+  if (nodeFiles.test(file)) { // node specific transforms only
     return babel.transform(
-      src, Object.assign({filename: file}, nodeOptions)).code;
+      src,
+      Object.assign({filename: file}, nodeOptions)
+    ).code;
   }
 
   return transformer.transform(src, file, {inlineRequires: true}).code;
@@ -603,26 +600,6 @@ n/a
 
 # <a name="apidoc.module.react-native.transformer"></a>[module react-native.transformer](#apidoc.module.react-native.transformer)
 
-#### <a name="apidoc.element.react-native.transformer.transformer"></a>[function <span class="apidocSignatureSpan">react-native.</span>transformer (data, callback)](#apidoc.element.react-native.transformer.transformer)
-- description and source-code
-```javascript
-transformer = function (data, callback) {
-  let result;
-  try {
-    result = transform(data.sourceCode, data.filename, data.options);
-  } catch (e) {
-    callback(e);
-    return;
-  }
-
-  callback(null, result);
-}
-```
-- example usage
-```shell
-n/a
-```
-
 #### <a name="apidoc.element.react-native.transformer.transform"></a>[function <span class="apidocSignatureSpan">react-native.transformer.</span>transform (src, filename, options)](#apidoc.element.react-native.transformer.transform)
 - description and source-code
 ```javascript
@@ -657,21 +634,21 @@ function transform(src, filename, options) {
 - example usage
 ```shell
 ...
+babelRegisterOnly([]);
+// has to be required after setting up babelRegisterOnly
+const transformer = require('../packager/transformer.js');
+
 module.exports = {
 process(src, file) {
-  // Don't transform node_modules, except react-tools which includes the
-  // untransformed copy of React
-  if (file.match(/node_modules\/(?!react-tools\/)/)) {
-    return src;
-  } else if (nodeFiles.test(file)) { // node specific transforms only
+  if (nodeFiles.test(file)) { // node specific transforms only
     return babel.transform(
-      src, Object.assign({filename: file}, nodeOptions)).code;
+      src,
+      Object.assign({filename: file}, nodeOptions)
+    ).code;
   }
 
   return transformer.transform(src, file, {inlineRequires: true}).code;
 },
-
-getCacheKey: createCacheKeyFunction([
 ...
 ```
 
