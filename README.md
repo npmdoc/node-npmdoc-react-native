@@ -1,9 +1,14 @@
-# api documentation for  [react-native (v0.43.2)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
+# npmdoc-react-native
+
+#### api documentation for  [react-native (v0.43.3)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
+
 #### A framework for building native apps using React
 
-[![NPM](https://nodei.co/npm/react-native.png?downloads=true)](https://www.npmjs.com/package/react-native)
+[![NPM](https://nodei.co/npm/react-native.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-react-native%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-native/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-react-native/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-react-native/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-native/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-native/build/screenCapture.npmPackageListing.svg)
 
@@ -124,8 +129,8 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "83cdb23d7a9cba207acbb52ad2f0b167df9b42b0",
-        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.43.2.tgz"
+        "shasum": "4f8e0d8d88827553789c02ef21cbc1afb68474d0",
+        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.43.3.tgz"
     },
     "engines": {
         "node": ">=4"
@@ -232,48 +237,37 @@
     "main": "Libraries/react-native/react-native-implementation.js",
     "maintainers": [
         {
-            "name": "amasad",
-            "email": "amjad.masad@gmail.com"
+            "name": "amasad"
         },
         {
-            "name": "bestander",
-            "email": "bestander@gmail.com"
+            "name": "bestander"
         },
         {
-            "name": "brentvatne",
-            "email": "brentvatne@gmail.com"
+            "name": "brentvatne"
         },
         {
-            "name": "ericvicenti",
-            "email": "ericvicenti@gmail.com"
+            "name": "ericvicenti"
         },
         {
-            "name": "fb",
-            "email": "opensource+npm@fb.com"
+            "name": "fb"
         },
         {
-            "name": "foghina",
-            "email": "felix@oghina.com"
+            "name": "foghina"
         },
         {
-            "name": "frantic",
-            "email": "alex.frantic@gmail.com"
+            "name": "frantic"
         },
         {
-            "name": "ide",
-            "email": "ide+npm@jameside.com"
+            "name": "ide"
         },
         {
-            "name": "mkonicek",
-            "email": "martin.konicek@gmail.com"
+            "name": "mkonicek"
         },
         {
-            "name": "spicyj",
-            "email": "ben@benalpert.com"
+            "name": "spicyj"
         },
         {
-            "name": "vjeux",
-            "email": "vjeuxx@gmail.com"
+            "name": "vjeux"
         }
     ],
     "name": "react-native",
@@ -281,7 +275,6 @@
     "peerDependencies": {
         "react": "16.0.0-alpha.6"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/facebook/react-native.git"
@@ -301,355 +294,8 @@
         "test-android-setup": "docker pull containership/android-base:latest",
         "test-android-unit": "npm run test-android-build && npm run test-android-run-unit"
     },
-    "version": "0.43.2"
+    "version": "0.43.3"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module react-native](#apidoc.module.react-native)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>setupBabel ()](#apidoc.element.react-native.setupBabel)
-1.  object <span class="apidocSignatureSpan">react-native.</span>preprocessor
-1.  object <span class="apidocSignatureSpan">react-native.</span>react_packager
-1.  object <span class="apidocSignatureSpan">react-native.</span>transformer
-
-#### [module react-native.babelRegisterOnly](#apidoc.module.react-native.babelRegisterOnly)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly.babelRegisterOnly)
-1.  [function <span class="apidocSignatureSpan">react-native.babelRegisterOnly.</span>config (onlyList)](#apidoc.element.react-native.babelRegisterOnly.config)
-
-#### [module react-native.preprocessor](#apidoc.module.react-native.preprocessor)
-1.  [function <span class="apidocSignatureSpan">react-native.preprocessor.</span>getCacheKey (src, file, configString)](#apidoc.element.react-native.preprocessor.getCacheKey)
-1.  [function <span class="apidocSignatureSpan">react-native.preprocessor.</span>process (src, file)](#apidoc.element.react-native.preprocessor.process)
-
-#### [module react-native.react_packager](#apidoc.module.react-native.react_packager)
-1.  [function <span class="apidocSignatureSpan">react-native.react_packager.</span>buildBundle (options, bundleOptions)](#apidoc.element.react-native.react_packager.buildBundle)
-1.  [function <span class="apidocSignatureSpan">react-native.react_packager.</span>createServer (options)](#apidoc.element.react-native.react_packager.createServer)
-1.  [function <span class="apidocSignatureSpan">react-native.react_packager.</span>getOrderedDependencyPaths (options, bundleOptions)](#apidoc.element.react-native.react_packager.getOrderedDependencyPaths)
-1.  object <span class="apidocSignatureSpan">react-native.react_packager.</span>Logger
-
-#### [module react-native.setupBabel](#apidoc.module.react-native.setupBabel)
-1.  [function <span class="apidocSignatureSpan">react-native.</span>setupBabel ()](#apidoc.element.react-native.setupBabel.setupBabel)
-1.  [function <span class="apidocSignatureSpan">react-native.setupBabel.</span>buildRegExps (basePath, dirPaths)](#apidoc.element.react-native.setupBabel.buildRegExps)
-1.  [function <span class="apidocSignatureSpan">react-native.setupBabel.</span>getOnlyList ()](#apidoc.element.react-native.setupBabel.getOnlyList)
-
-#### [module react-native.transformer](#apidoc.module.react-native.transformer)
-1.  [function <span class="apidocSignatureSpan">react-native.transformer.</span>transform (src, filename, options)](#apidoc.element.react-native.transformer.transform)
-
-
-
-# <a name="apidoc.module.react-native"></a>[module react-native](#apidoc.module.react-native)
-
-#### <a name="apidoc.element.react-native.babelRegisterOnly"></a>[function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly)
-- description and source-code
-```javascript
-function registerOnly(onlyList) {
-  require('babel-register')(config(onlyList));
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.setupBabel"></a>[function <span class="apidocSignatureSpan">react-native.</span>setupBabel ()](#apidoc.element.react-native.setupBabel)
-- description and source-code
-```javascript
-function setupBabel() {
-  babelRegisterOnly(getOnlyList());
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.react-native.babelRegisterOnly"></a>[module react-native.babelRegisterOnly](#apidoc.module.react-native.babelRegisterOnly)
-
-#### <a name="apidoc.element.react-native.babelRegisterOnly.babelRegisterOnly"></a>[function <span class="apidocSignatureSpan">react-native.</span>babelRegisterOnly (onlyList)](#apidoc.element.react-native.babelRegisterOnly.babelRegisterOnly)
-- description and source-code
-```javascript
-function registerOnly(onlyList) {
-  require('babel-register')(config(onlyList));
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.babelRegisterOnly.config"></a>[function <span class="apidocSignatureSpan">react-native.babelRegisterOnly.</span>config (onlyList)](#apidoc.element.react-native.babelRegisterOnly.config)
-- description and source-code
-```javascript
-function config(onlyList) {
-  _only = _only.concat(onlyList);
-  return {
-    presets: ['es2015-node'],
-    plugins: [
-      'transform-flow-strip-types',
-      'syntax-trailing-function-commas',
-      'transform-object-rest-spread',
-      'transform-async-to-generator',
-    ],
-    only: _only,
-    retainLines: true,
-    sourceMaps: 'inline',
-    babelrc: false,
-  };
-}
-```
-- example usage
-```shell
-...
-const createCacheKeyFunction = require('fbjs-scripts/jest/createCacheKeyFunction');
-const path = require('path');
-
-const nodeFiles = RegExp([
-'/local-cli/',
-'/packager/(?!src/Resolver/polyfills/)',
-].join('|'));
-const nodeOptions = babelRegisterOnly.config([nodeFiles]);
-
-babelRegisterOnly([]);
-// has to be required after setting up babelRegisterOnly
-const transformer = require('../packager/transformer.js');
-
-module.exports = {
-process(src, file) {
-...
-```
-
-
-
-# <a name="apidoc.module.react-native.preprocessor"></a>[module react-native.preprocessor](#apidoc.module.react-native.preprocessor)
-
-#### <a name="apidoc.element.react-native.preprocessor.getCacheKey"></a>[function <span class="apidocSignatureSpan">react-native.preprocessor.</span>getCacheKey (src, file, configString)](#apidoc.element.react-native.preprocessor.getCacheKey)
-- description and source-code
-```javascript
-(src, file, configString) => crypto.createHash('md5')
-.update(cacheKey)
-.update(src + file + configString)
-.digest('hex')
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.preprocessor.process"></a>[function <span class="apidocSignatureSpan">react-native.preprocessor.</span>process (src, file)](#apidoc.element.react-native.preprocessor.process)
-- description and source-code
-```javascript
-process(src, file) {
-  if (nodeFiles.test(file)) { // node specific transforms only
-    return babel.transform(
-      src,
-      Object.assign({filename: file}, nodeOptions)
-    ).code;
-  }
-
-  return transformer.transform(src, file, {inlineRequires: true}).code;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.react-native.react_packager"></a>[module react-native.react_packager](#apidoc.module.react-native.react_packager)
-
-#### <a name="apidoc.element.react-native.react_packager.buildBundle"></a>[function <span class="apidocSignatureSpan">react-native.react_packager.</span>buildBundle (options, bundleOptions)](#apidoc.element.react-native.react_packager.buildBundle)
-- description and source-code
-```javascript
-buildBundle = function (options, bundleOptions) {
-  var server = createNonPersistentServer(options);
-  return server.buildBundle(bundleOptions).
-  then(p => {
-    server.end();
-    return p;
-  });
-}
-```
-- example usage
-```shell
-...
-  projectRoots: Array<string>,
-  reporter: Reporter,
-  watch?: boolean,
-};
-
-exports.buildBundle = function(options: Options, bundleOptions: {}) {
-  var server = createNonPersistentServer(options);
-  return server.buildBundle(bundleOptions)
-    .then(p => {
-      server.end();
-      return p;
-    });
-};
-
-exports.getOrderedDependencyPaths = function(options: Options, bundleOptions: {}) {
-...
-```
-
-#### <a name="apidoc.element.react-native.react_packager.createServer"></a>[function <span class="apidocSignatureSpan">react-native.react_packager.</span>createServer (options)](#apidoc.element.react-native.react_packager.createServer)
-- description and source-code
-```javascript
-function createServer(options) {
-  // the debug module is configured globally, we need to enable debugging
-  // *before* requiring any packages that use 'debug' for logging
-  if (options.verbose) {
-    enableDebug();
-  }
-
-  // Some callsites may not be Flowified yet.
-  invariant(options.reporter != null, 'createServer() requires reporter');
-  const serverOptions = Object.assign({}, options);
-  delete serverOptions.verbose;
-  var Server = require('./src/Server');
-  return new Server(serverOptions);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.react_packager.getOrderedDependencyPaths"></a>[function <span class="apidocSignatureSpan">react-native.react_packager.</span>getOrderedDependencyPaths (options, bundleOptions)](#apidoc.element.react-native.react_packager.getOrderedDependencyPaths)
-- description and source-code
-```javascript
-getOrderedDependencyPaths = function (options, bundleOptions) {
-  var server = createNonPersistentServer(options);
-  return server.getOrderedDependencyPaths(bundleOptions).
-  then(function (paths) {
-    server.end();
-    return paths;
-  });
-}
-```
-- example usage
-```shell
-...
-      server.end();
-      return p;
-    });
-};
-
-exports.getOrderedDependencyPaths = function(options: Options, bundleOptions: {}) {
-  var server = createNonPersistentServer(options);
-  return server.getOrderedDependencyPaths(bundleOptions)
-    .then(function(paths) {
-      server.end();
-      return paths;
-    });
-};
-
-function enableDebug() {
-...
-```
-
-
-
-# <a name="apidoc.module.react-native.setupBabel"></a>[module react-native.setupBabel](#apidoc.module.react-native.setupBabel)
-
-#### <a name="apidoc.element.react-native.setupBabel.setupBabel"></a>[function <span class="apidocSignatureSpan">react-native.</span>setupBabel ()](#apidoc.element.react-native.setupBabel.setupBabel)
-- description and source-code
-```javascript
-function setupBabel() {
-  babelRegisterOnly(getOnlyList());
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.setupBabel.buildRegExps"></a>[function <span class="apidocSignatureSpan">react-native.setupBabel.</span>buildRegExps (basePath, dirPaths)](#apidoc.element.react-native.setupBabel.buildRegExps)
-- description and source-code
-```javascript
-function buildRegExps(basePath, dirPaths) {
-  return dirPaths.map(folderPath =>
-    // Babel 'only' option works with forward slashes in the RegExp so replace
-    // backslashes for Windows.
-    new RegExp('^${escapeRegExp(path.resolve(basePath, folderPath).replace(/\\/g, '/'))}')
-  );
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-native.setupBabel.getOnlyList"></a>[function <span class="apidocSignatureSpan">react-native.setupBabel.</span>getOnlyList ()](#apidoc.element.react-native.setupBabel.getOnlyList)
-- description and source-code
-```javascript
-function getOnlyList() {
-  return buildRegExps(__dirname, BABEL_ENABLED_PATHS);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.react-native.transformer"></a>[module react-native.transformer](#apidoc.module.react-native.transformer)
-
-#### <a name="apidoc.element.react-native.transformer.transform"></a>[function <span class="apidocSignatureSpan">react-native.transformer.</span>transform (src, filename, options)](#apidoc.element.react-native.transformer.transform)
-- description and source-code
-```javascript
-function transform(src, filename, options) {
-  options = options || {};
-
-  const OLD_BABEL_ENV = process.env.BABEL_ENV;
-  process.env.BABEL_ENV = options.dev ? 'development' : 'production';
-
-  try {
-    const babelConfig = buildBabelConfig(filename, options);
-    const { ast } = babel.transform(src, babelConfig);
-    const result = generate(ast, {
-      comments: false,
-      compact: false,
-      filename,
-      sourceFileName: filename,
-      sourceMaps: true },
-    src);
-
-    return {
-      ast,
-      code: result.code,
-      filename,
-      map: options.generateSourceMaps ? result.map : result.rawMappings.map(compactMapping) };
-
-  } finally {
-    process.env.BABEL_ENV = OLD_BABEL_ENV;
-  }
-}
-```
-- example usage
-```shell
-...
-babelRegisterOnly([]);
-// has to be required after setting up babelRegisterOnly
-const transformer = require('../packager/transformer.js');
-
-module.exports = {
-process(src, file) {
-  if (nodeFiles.test(file)) { // node specific transforms only
-    return babel.transform(
-      src,
-      Object.assign({filename: file}, nodeOptions)
-    ).code;
-  }
-
-  return transformer.transform(src, file, {inlineRequires: true}).code;
-},
-...
 ```
 
 
