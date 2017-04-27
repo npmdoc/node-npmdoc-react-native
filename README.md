@@ -1,6 +1,6 @@
 # npmdoc-react-native
 
-#### api documentation for  [react-native (v0.43.3)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
+#### basic api documentation for  [react-native (v0.43.4)](https://github.com/facebook/react-native#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-native.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-native) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-native.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-native)
 
 #### A framework for building native apps using React
 
@@ -129,8 +129,8 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "4f8e0d8d88827553789c02ef21cbc1afb68474d0",
-        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.43.3.tgz"
+        "shasum": "92fb6937ab415b2e5612835a93a61845de98eb4d",
+        "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.43.4.tgz"
     },
     "engines": {
         "node": ">=4"
@@ -294,7 +294,7 @@
         "test-android-setup": "docker pull containership/android-base:latest",
         "test-android-unit": "npm run test-android-build && npm run test-android-run-unit"
     },
-    "version": "0.43.3"
+    "version": "0.43.4"
 }
 ```
 
